@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, InstagramIcon } from "lucide-react";
+import { InstagramIcon } from "lucide-react";
 import Image from "next/image";
 import logo from "../../assets/img/logo.webp";
 
