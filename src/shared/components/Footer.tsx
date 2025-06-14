@@ -1,8 +1,4 @@
-import {
-  Instagram,
-  Linkedin,
-  InstagramIcon,
-} from "lucide-react";
+import { Instagram, Linkedin, InstagramIcon } from "lucide-react";
 import Image from "next/image";
 import logo from "../../assets/img/logo.webp";
 
@@ -10,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-emerald-900 to-teal-900 text-white">
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 justify-center text-center gap-8 mb-12">
+        <div className="grid md:grid-cols-4 justify-center text-center gap-8 mb-12 md:text-left">
           <Image
             src={logo}
             alt="logo"
@@ -24,20 +20,6 @@ export default function Footer() {
               Platform pembelajaran terdepan untuk akuntansi syariah di
               Indonesia
             </p>
-            <div className="flex justify-center gap-4">
-              <a
-                href="#"
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors duration-300"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors duration-300"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           <div>
@@ -74,17 +56,23 @@ export default function Footer() {
 
           <div>
             <h4 className="text-lg font-semibold mb-6 text-emerald-300">
-              Kontak Kami
+              Kontak
             </h4>
-            <div className="flex justify-center gap-2">
-              <div className="flex items-center gap-3">
+            <div className="flex flex-col md:items-start items-center gap-2">
+              <a
+                href="https://www.instagram.com/nadhifajilan?igsh=MXNlb2ppMG4zenk5Yw%3D%3D&utm_source=qr"
+                className="flex items-center gap-3"
+              >
                 <InstagramIcon className="w-5 h-5 text-emerald-400" />
-                <span className="text-emerald-100">Nadhifa</span>
-              </div>
-              <div className="flex items-center gap-3">
+                <span className="text-emerald-100">Nadhifa Jilan</span>
+              </a>
+              <a
+                href="https://www.instagram.com/faa.dlilahh?igsh=MW9xZDh5bTN2amtzNA=="
+                className="flex items-center gap-3"
+              >
                 <InstagramIcon className="w-5 h-5 text-emerald-400" />
-                <span className="text-emerald-100">Dela</span>
-              </div>
+                <span className="text-emerald-100">Putri Arini</span>
+              </a>
             </div>
           </div>
         </div>
@@ -95,7 +83,7 @@ export default function Footer() {
               © 2025 Ijarah Learning. All rights reserved.
             </div>
             <div className="text-sm text-center font-bold text-emerald-100">
-              Created by Nadhifa & Dela
+              Created by Nadhifa Jilan & Putri Arini
             </div>
           </div>
         </div>

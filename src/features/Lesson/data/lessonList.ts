@@ -2,35 +2,35 @@
 import { BookOpen, FileText, VideoIcon } from "lucide-react";
 export type LessonType = "ppt" | "video" | "link";
 type PPTContent = {
-  title: string;
-  files: {
-    name: string;
-    url: string;
-  }[];
+    title: string;
+    files: {
+        name: string;
+        url: string;
+    }[];
 };
 
 type VideoContent = {
-  title: string;
-  videos: {
-    name: string;
-    url: string;
-  }[];
+    title: string;
+    videos: {
+        name: string;
+        url: string;
+    }[];
 };
 
 type LinkContent = {
-  title: string;
-  links: {
-    name: string;
-    url: string;
-  }[];
+    title: string;
+    links: {
+        name: string;
+        url: string;
+    }[];
 };
 export interface Lesson {
-  id: number;
-  icon: React.ElementType;
-  title: string;
-  description: string;
-  type: LessonType;
-  content: PPTContent | VideoContent | LinkContent;
+    id: number;
+    icon: React.ElementType;
+    title: string;
+    description: string;
+    type: LessonType;
+    content: PPTContent | VideoContent | LinkContent;
 }
 export const lessonList: Lesson[] = [
     {
@@ -40,7 +40,7 @@ export const lessonList: Lesson[] = [
         description: "Kurikulum terstruktur dan komprehensif",
         type: "ppt",
         content: {
-            title: "Materi Pembelajaran Terstruktur",
+            title: "Materi Pembelajaran",
             files: [
                 {
                     name: "Sesi 1: Akuntansi Keuangan Syariah",
@@ -179,9 +179,14 @@ export const lessonList: Lesson[] = [
             title: "Artikel Lengkap",
             links: [
                 {
-                    name: "Artikel: Implementasi Ijarah",
-                    url: "https://contohartikel.com/ijarah",
+                    name: "Memahami laporan keuangan konvensional dan syaraih, serta bagaimana cara agar dapat membedakanya",
+                    url: "https://www.kompasiana.com/muhammadzidan3343/68487d7234777c6b3c400192/memahami-laporan-keuangan-konvensional-dan-syaraih-serta-bagaimana-cara-agar-dapat-membedakanya",
                 },
+                {
+                    name: "Refleksi 5 Hari Menjelang Ramadhan: Akuntansi Syariah dan Transparansi Keuangan Umat",
+                    url: "https://www.kompasiana.com/agusarwani2024/67bba93d34777c3850395373/refleksi-5-hari-menjelang-ramadhan-akuntansi-syariah-dan-transparansi-keuangan-umat",
+                },
+
             ],
         },
     },

@@ -45,18 +45,17 @@ export default function PDFLesson({ title, files }: PDFLessonProps) {
           <h3 className="text-xl font-semibold text-gray-700 mb-2">
             {currentPDF.name}
           </h3>
-          <p className="text-sm text-gray-500 mb-4">PDF Document</p>
           <div className="flex justify-center gap-3 flex-wrap">
             <button
               onClick={openPreview}
-              className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors cursor-pointer"
             >
               <Eye className="w-4 h-4" />
               Preview
             </button>
             <button
               onClick={() => handleDownload(currentPDF.url, currentPDF.name)}
-              className="flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors cursor-pointer"
             >
               <Download className="w-4 h-4" />
               Download
@@ -68,20 +67,20 @@ export default function PDFLesson({ title, files }: PDFLessonProps) {
       {files.length > 1 && (
         <div className="mb-4">
           <h3 className="text-lg font-semibold text-gray-700 mb-3">
-            Pilih PDF Lain:
+            Pilih Materi Lain:
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {files.map((file, index) => (
               <button
                 key={index}
                 onClick={() => setSelectedPDF(index)}
-                className={`p-3 rounded-lg border-2 text-left transition-all ${
+                className={`p-3 rounded-lg border-2 text-left cursor-pointer transition-all ${
                   selectedPDF === index
                     ? "border-blue-500 bg-blue-50 text-blue-700"
                     : "border-gray-200 bg-white hover:border-gray-300 text-gray-700"
                 }`}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex-1 items-center gap-3">
                   <FileText className="w-5 h-5 text-red-500" />
                   <div>
                     <p className="font-medium text-sm">{file.name}</p>
@@ -106,7 +105,7 @@ export default function PDFLesson({ title, files }: PDFLessonProps) {
                 onClick={closePreview}
                 className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-200 rounded-full transition-colors"
               >
-                <X className="w-5 h-5" />
+                <X className="w-5 h-5 cursor-pointer" />
               </button>
             </div>
             
@@ -114,7 +113,7 @@ export default function PDFLesson({ title, files }: PDFLessonProps) {
               <div className="h-full bg-white rounded-lg border overflow-hidden">
                 <iframe
                   src={currentPDF.url}
-                  className="w-full h-full border-0"
+                  className="w-full h-full border-2"
                   title={`Preview ${currentPDF.name}`}
                 />
               </div>

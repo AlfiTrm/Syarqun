@@ -20,7 +20,7 @@ export default function VideoPlaylist({
       <div className="p-4 bg-gray-50 border-b">
         <h4 className="font-semibold text-gray-900">Video Playlist</h4>
         <p className="text-sm text-gray-600">
-          {videos.length} video • {videos.filter((v) => v.completed).length} Selesai
+          {videos.length} video • {videos.filter((v) => v.completed).length} ditonton
         </p>
       </div>
       <div className="max-h-[500px] overflow-y-auto">
@@ -28,7 +28,7 @@ export default function VideoPlaylist({
           <button
             key={index}
             onClick={() => onSelect(video)}
-            className={`w-full p-4 text-left border-l-4 ${
+            className={`w-full p-4 text-left border-l-4 cursor-pointer ${
               selectedUrl === video.url
                 ? "border-green-500 bg-green-50"
                 : "border-transparent hover:bg-gray-50"
