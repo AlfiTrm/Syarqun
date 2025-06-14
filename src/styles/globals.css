@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.mycontainer {
+    @apply container right-0 left-0 mx-auto lg:px-18 md:px-28 px-8 xl:px-16;
+}
+html {
+  scroll-behavior: smooth;
+}
