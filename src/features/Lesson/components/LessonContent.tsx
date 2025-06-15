@@ -4,26 +4,8 @@ import React from "react";
 import PDFLesson from "./pdf/PDFLesson";
 import VideoLesson from "./video/VideoLessont";
 import { ArticlePreviewSlider } from "./article/Article";
+import { LessonContentProps } from "../types/ILesson";
 
-export type VideoContent = {
-  title: string;
-  videos: { name: string; url: string }[];
-};
-
-export type PPTContent = {
-  title: string;
-  files: { name: string; url: string }[];
-};
-
-export type LinkContent = {
-  title: string;
-  links: { name: string; url: string }[];
-};
-
-export type LessonContentProps =
-  | { type: "ppt"; content: PPTContent }
-  | { type: "video"; content: VideoContent }
-  | { type: "link"; content: LinkContent };
 
 export default function LessonContent(props: LessonContentProps) {
   if (props.type === "video") {

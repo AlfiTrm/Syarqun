@@ -4,10 +4,8 @@ import { lessonList } from "../data/lessonList";
 import React from "react";
 import Header from "../components/Header";
 import LessonContent, {
-  type PPTContent,
-  type VideoContent,
-  type LinkContent,
 } from "../components/LessonContent";
+import { LinkContent, PPTContent, VideoContent } from "../types/ILesson";
 
 
 export default function Lesson() {

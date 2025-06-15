@@ -17,8 +17,7 @@ export default function Footer() {
               Syarkun
             </h3>
             <p className="text-emerald-100 mb-6 leading-relaxed">
-              Platform pembelajaran terdepan untuk akuntansi syariah di
-              Indonesia
+              Platform pembelajaran Akuntansi Keuangan Syariah
             </p>
           </div>
 
@@ -64,14 +63,14 @@ export default function Footer() {
                 className="flex items-center gap-3"
               >
                 <InstagramIcon className="w-5 h-5 text-emerald-400" />
-                <span className="text-emerald-100">Nadhifa Jilan</span>
+                <span className="text-emerald-100">Nadhifa Jilan Hafidzah</span>
               </a>
               <a
                 href="https://www.instagram.com/faa.dlilahh?igsh=MW9xZDh5bTN2amtzNA=="
                 className="flex items-center gap-3"
               >
                 <InstagramIcon className="w-5 h-5 text-emerald-400" />
-                <span className="text-emerald-100">Putri Arini</span>
+                <span className="text-emerald-100">Putri Arini Fadlilah</span>
               </a>
             </div>
           </div>
@@ -80,10 +79,10 @@ export default function Footer() {
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-emerald-100 text-sm">
-              © 2025 Ijarah Learning. All rights reserved.
+              © 2025 Syarqun. All rights reserved.
             </div>
             <div className="text-sm text-center font-bold text-emerald-100">
-              Created by Nadhifa Jilan & Putri Arini
+              Created by Nadhifa Jilan Hafidzah & Putri Arini Fadlilah
             </div>
           </div>
         </div>
